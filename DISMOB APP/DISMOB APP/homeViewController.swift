@@ -5,7 +5,6 @@
 //  Created by Isa Muhammad on 23/04/2019.
 //  Copyright © 2019 Isa Muhammad. All rights reserved.
 //
-
 import UIKit
 import CoreMotion
 
@@ -15,16 +14,9 @@ class homeViewController: UIViewController {
     var pedometerData = CMPedometer()
     var numberOfSteps:Int! = nil
     
-    // timers
-    var timer = Timer()
-    var timerInterval = 1.0
-    var timeElapsed:TimeInterval = 1.0
-    @IBOutlet weak var calLabel: UILabel!
-    
-
-
     
     //MARK: - Outlets
+   @IBOutlet weak var calLabel: UILabel!
     @IBOutlet weak var stepsLabel: UILabel!
     @IBAction func startButton(_ sender: UIButton)
     {
@@ -56,28 +48,12 @@ class homeViewController: UIViewController {
     
     // display the updated data
     func displayPedometerData(){
-        timeElapsed += 1.0
         //Number of steps
         if let numberOfSteps = self.numberOfSteps{
             stepsLabel.text = String(format:"Steps: %i",numberOfSteps)
         }
     }
     
-    
-    //MARK: - timer functions
-    func startTimer(){
-        if timer.isValid { timer.invalidate() }
-        timer = Timer.scheduledTimer(timeInterval: timerInterval,target: self,selector: #selector(timerAction(timer:)) ,userInfo: nil,repeats: true)
-    }
-    
-    func stopTimer(){
-        timer.invalidate()
-        displayPedometerData()
-    }
-    
-    @objc func timerAction(timer:Timer){
-        displayPedometerData()
-    }
     
     
     
@@ -87,8 +63,5 @@ class homeViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
-   
-    
     
 }

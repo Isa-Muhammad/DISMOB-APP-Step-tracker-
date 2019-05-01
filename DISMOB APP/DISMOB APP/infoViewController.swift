@@ -18,30 +18,16 @@ class infoViewController: UIViewController ,  UITextFieldDelegate {
     let userID = UUID().uuidString
     @IBAction func nextButton(_ sender: Any) {
         //guard nameTextField.text != nil else { return }
-        if nameTextField.text != "" {
-        performSegue(withIdentifier: "initSeg", sender: self)
-        _ = [
-            "name": "abc",
-            "age": 0,
-            "sex": true,
-            "height": 0,
-            "weight": 0,
-        ] as [String: Any]
-        // add textfield values to firebase database
-            Node.get(.users).child("name").setValue(nameTextField.text)
-            Setting.didRegister = true
-        
-            Node.get(.users).child("age").setValue(ageTextField.text)
-            Setting.didRegister = true
-        
-            Node.get(.users).child("sex").setValue(sexTextField.text)
-            Setting.didRegister = true
-        
-            Node.get(.users).child("height").setValue(heightTextField.text)
-            Setting.didRegister = true
-        
-            Node.get(.users).child("weight").setValue(weightTextField.text)
-            Setting.didRegister = true
+        let successfullyRegistered = UserService.shared.register(name: nameTextField.text, age: ageTextField.text, sex: sexTextField.text, height: heightTextField.text, weight: weightTextField.text)
+        if successfullyRegistered {
+            performSegue(withIdentifier: "initSeg", sender: self)
+            _ = [
+                "name": "abc",
+                "age": 0,
+                "sex": true,
+                "height": 0,
+                "weight": 0,
+                ] as [String: Any]
         }
 
     }

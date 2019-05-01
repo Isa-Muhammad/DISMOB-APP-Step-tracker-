@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC10E05C2EA0E40D7034973 /* Pods_DISMOB_APPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A64278ED315E21E56151EF /* Pods_DISMOB_APPTests.framework */; };
 		4FD6854F0F3D22B6D07FAB9D /* Pods_DISMOB_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1DBA0A1FB75107CFDD93AC /* Pods_DISMOB_APP.framework */; };
 		63116DED22762E1E00907C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63116DEC22762E1E00907C81 /* GoogleService-Info.plist */; };
 		63116DEF2277760F00907C81 /* FirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63116DEE2277760F00907C81 /* FirebaseDatabase.swift */; };
@@ -21,6 +22,10 @@
 		6318C9D1226EEDF100E37598 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318C9D0226EEDF100E37598 /* profileViewController.swift */; };
 		6318C9D422742F0F00E37598 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6318C9D322742F0F00E37598 /* CoreMotion.framework */; };
 		6398504D2279CAE10010AD2B /* DISMOB_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6398504C2279CAE10010AD2B /* DISMOB_APPTests.swift */; };
+		639850552279F34F0010AD2B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639850542279F34F0010AD2B /* UserService.swift */; };
+		639850562279F4670010AD2B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639850542279F34F0010AD2B /* UserService.swift */; };
+		639850572279F5DC0010AD2B /* FirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63116DEE2277760F00907C81 /* FirebaseDatabase.swift */; };
+		639850582279F5F00010AD2B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63116DF022777ACC00907C81 /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4D1DBA0A1FB75107CFDD93AC /* Pods_DISMOB_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DISMOB_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F63DFFE4E763E5DD808884 /* Pods-DISMOB APPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DISMOB APPTests.debug.xcconfig"; path = "Target Support Files/Pods-DISMOB APPTests/Pods-DISMOB APPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63116DEC22762E1E00907C81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63116DEE2277760F00907C81 /* FirebaseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabase.swift; sourceTree = "<group>"; };
 		63116DF022777ACC00907C81 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
@@ -52,7 +58,10 @@
 		6398504A2279CAE10010AD2B /* DISMOB APPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DISMOB APPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6398504C2279CAE10010AD2B /* DISMOB_APPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DISMOB_APPTests.swift; sourceTree = "<group>"; };
 		6398504E2279CAE10010AD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639850542279F34F0010AD2B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		64A64278ED315E21E56151EF /* Pods_DISMOB_APPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DISMOB_APPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B443DB71BE911B5E7162812 /* Pods-DISMOB APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DISMOB APP.debug.xcconfig"; path = "Target Support Files/Pods-DISMOB APP/Pods-DISMOB APP.debug.xcconfig"; sourceTree = "<group>"; };
+		8D6B0195A5576053EB4E2738 /* Pods-DISMOB APPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DISMOB APPTests.release.xcconfig"; path = "Target Support Files/Pods-DISMOB APPTests/Pods-DISMOB APPTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6413B360FD69B4E22500A03 /* Pods-DISMOB APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DISMOB APP.release.xcconfig"; path = "Target Support Files/Pods-DISMOB APP/Pods-DISMOB APP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC10E05C2EA0E40D7034973 /* Pods_DISMOB_APPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +121,7 @@
 				63116DEE2277760F00907C81 /* FirebaseDatabase.swift */,
 				63116DF022777ACC00907C81 /* Setting.swift */,
 				63116DF222777B7600907C81 /* MyMainTab.swift */,
+				639850542279F34F0010AD2B /* UserService.swift */,
 			);
 			path = "DISMOB APP";
 			sourceTree = "<group>";
@@ -120,6 +131,7 @@
 			children = (
 				6318C9D322742F0F00E37598 /* CoreMotion.framework */,
 				4D1DBA0A1FB75107CFDD93AC /* Pods_DISMOB_APP.framework */,
+				64A64278ED315E21E56151EF /* Pods_DISMOB_APPTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +150,8 @@
 			children = (
 				8B443DB71BE911B5E7162812 /* Pods-DISMOB APP.debug.xcconfig */,
 				A6413B360FD69B4E22500A03 /* Pods-DISMOB APP.release.xcconfig */,
+				58F63DFFE4E763E5DD808884 /* Pods-DISMOB APPTests.debug.xcconfig */,
+				8D6B0195A5576053EB4E2738 /* Pods-DISMOB APPTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -168,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 639850512279CAE10010AD2B /* Build configuration list for PBXNativeTarget "DISMOB APPTests" */;
 			buildPhases = (
+				06CE54933D614803ACBA9867 /* [CP] Check Pods Manifest.lock */,
 				639850462279CAE10010AD2B /* Sources */,
 				639850472279CAE10010AD2B /* Frameworks */,
 				639850482279CAE10010AD2B /* Resources */,
+				6ACA9B0C66FB3273107419B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +258,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		06CE54933D614803ACBA9867 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DISMOB APPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACA9B0C66FB3273107419B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DISMOB APPTests/Pods-DISMOB APPTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DISMOB APPTests/Pods-DISMOB APPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9592B323B0B7575FF092DB7B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +365,7 @@
 				6318C9BF226EE5F200E37598 /* infoViewController.swift in Sources */,
 				63116DF122777ACC00907C81 /* Setting.swift in Sources */,
 				6318C9CF226EED9E00E37598 /* homeViewController.swift in Sources */,
+				639850552279F34F0010AD2B /* UserService.swift in Sources */,
 				6318C9D1226EEDF100E37598 /* profileViewController.swift in Sources */,
 				63116DF322777B7600907C81 /* MyMainTab.swift in Sources */,
 				6318C9BD226EE5F200E37598 /* AppDelegate.swift in Sources */,
@@ -311,7 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639850562279F4670010AD2B /* UserService.swift in Sources */,
 				6398504D2279CAE10010AD2B /* DISMOB_APPTests.swift in Sources */,
+				639850582279F5F00010AD2B /* Setting.swift in Sources */,
+				639850572279F5DC0010AD2B /* FirebaseDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +569,7 @@
 		};
 		639850522279CAE10010AD2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F63DFFE4E763E5DD808884 /* Pods-DISMOB APPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +590,7 @@
 		};
 		639850532279CAE10010AD2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6B0195A5576053EB4E2738 /* Pods-DISMOB APPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
